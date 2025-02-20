@@ -2,13 +2,13 @@
 RewriteEngine On
 RewriteBase /
 
-# WordPress kurallarını sadece WP klasörü için uygula
-RewriteRule ^wp(/.*)?$ /WP/$1 [L,NC]
+# Handle requests for existing files or directories
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
 
-# Ana dizindeki dosyalara doğrudan erişime izin ver
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /index.html [L]
+# Rewrite all other requests to index.html
+RewriteRule ^ index.html [L]
 
 # GZIP Sıkıştırma
 <IfModule mod_deflate.c>
@@ -42,7 +42,7 @@ RewriteRule ^(.*)$ /index.html [L]
     Header set X-Content-Type-Options nosniff
     Header set X-XSS-Protection "1; mode=block"
     Header set X-Frame-Options SAMEORIGIN
-    Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+    Header set Access-Control-Allow-Origin "*"
 </IfModule>
 
 # Directory listing'i kapat

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Letmoo.tr - Sanat ve Yaşamın Birleştiği Yer</title>
-<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
 <script>
   tailwind.config = {
     theme: {
@@ -20,48 +20,85 @@
     }
   };
 </script>
+<style>
+  /* Production-specific optimizations */
+  @layer utilities {
+    .container {
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+  }
+  .font-cormorant { font-family: 'Cormorant Garamond', serif !important; }
+  .font-nunito { font-family: 'Nunito', sans-serif !important; }
+  body { font-family: 'Nunito', sans-serif; }
+  nav { background: white; }
+  header { position: fixed; width: 100%; background: rgba(255, 255, 255, 0.95); z-index: 50; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+  
+  /* Mobile menu styles */
+  @media (max-width: 768px) {
+    .nav-menu {
+      background: white;
+      padding: 1rem;
+      margin-top: 0.5rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .nav-menu a {
+      display: block;
+      padding: 0.75rem 0;
+      text-align: center;
+      border-bottom: 1px solid #eee;
+    }
+    .nav-menu a:last-child {
+      border-bottom: none;
+    }
+    .nav-menu .flex.items-center {
+      justify-content: center;
+      margin-top: 0.5rem;
+    }
+  }
+  @media (max-width: 768px) {
+      nav { flex-wrap: wrap; }
+      nav > div { width: 100%; margin-top: 1rem; }
+      nav a { display: block; text-align: center; padding: 0.5rem 0; }
+  }
+</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Cormorant+Garamond:wght@400;600&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="/css/styles.css" type="text/css">
-<style>
-.font-cormorant { font-family: 'Cormorant Garamond', serif !important; }
-.font-nunito { font-family: 'Nunito', sans-serif !important; }
-body { font-family: 'Nunito', sans-serif; }
-nav { background: white; }
-header { position: fixed; width: 100%; background: rgba(255, 255, 255, 0.95); z-index: 50; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-.container { width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; }
-@media (max-width: 768px) {
-    nav { flex-wrap: wrap; }
-    nav > div { width: 100%; margin-top: 1rem; }
-    nav a { display: block; text-align: center; padding: 0.5rem 0; }
-}
-</style>
+<link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 <body class="bg-white font-nunito">
 <header class="fixed w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
-<nav class="container mx-auto px-6 py-4 flex items-center justify-between">
-<a href="#home" class="text-3xl font-['Pacifico'] text-primary">letmoo.tr</a>
-<div class="flex flex-col md:flex-row md:items-center md:space-x-8">
-<a href="#home" class="text-gray-700 hover:text-primary py-2">Anasayfa</a>
-<a href="#collections" class="text-gray-700 hover:text-primary py-2">Koleksiyonlar</a>
-<a href="#artists" class="text-gray-700 hover:text-primary py-2">Sanatçılar</a>
-<a href="#stories" class="text-gray-700 hover:text-primary py-2">Hikayeler</a>
-<a href="#contact" class="text-gray-700 hover:text-primary py-2">İletişim</a>
-<a href="index-en.html" class="text-gray-700 hover:text-primary py-2">English</a>
-<div class="flex items-center space-x-4 md:ml-4 py-2">
-<a href="https://www.etsy.com/shop/letmootr" target="_blank" class="text-gray-700 hover:text-primary store-link">
-<i class="ri-store-2-fill text-xl"></i>
-</a>
-<a href="https://www.amazon.com.tr/letmootr" target="_blank" class="text-gray-700 hover:text-primary store-link">
-<i class="ri-amazon-fill text-xl"></i>
-</a>
-<a href="https://www.ebay.com/usr/letmootr" target="_blank" class="text-gray-700 hover:text-primary store-link">
-<i class="ri-shopping-bag-fill text-xl"></i>
-</a>
-</div>
-</div>
+<nav class="container mx-auto px-6 py-4">
+    <div class="flex items-center justify-between">
+        <a href="#home" class="text-3xl font-['Pacifico'] text-primary">letmoo.tr</a>
+        <button class="nav-toggle md:hidden text-primary">
+            <i class="ri-menu-line text-2xl"></i>
+        </button>
+    </div>
+    <div class="nav-menu hidden md:flex md:items-center md:justify-end md:space-x-8 mt-4 md:mt-0">
+        <a href="#home" class="text-gray-700 hover:text-primary py-2">Anasayfa</a>
+        <a href="#collections" class="text-gray-700 hover:text-primary py-2">Koleksiyonlar</a>
+        <a href="#artists" class="text-gray-700 hover:text-primary py-2">Sanatçılar</a>
+        <a href="#stories" class="text-gray-700 hover:text-primary py-2">Hikayeler</a>
+        <a href="#contact" class="text-gray-700 hover:text-primary py-2">İletişim</a>
+        <a href="index-en.html" class="text-gray-700 hover:text-primary py-2">English</a>
+        <div class="flex items-center space-x-4 md:ml-4 py-2">
+            <a href="https://www.etsy.com/shop/letmootr" target="_blank" class="text-gray-700 hover:text-primary store-link">
+                <i class="ri-store-2-fill text-xl"></i>
+            </a>
+            <a href="https://www.amazon.com.tr/letmootr" target="_blank" class="text-gray-700 hover:text-primary store-link">
+                <i class="ri-amazon-fill text-xl"></i>
+            </a>
+            <a href="https://www.ebay.com/usr/letmootr" target="_blank" class="text-gray-700 hover:text-primary store-link">
+                <i class="ri-shopping-bag-fill text-xl"></i>
+            </a>
+        </div>
+    </div>
 </nav>
 </header>
 
@@ -411,6 +448,8 @@ header { position: fixed; width: 100%; background: rgba(255, 255, 255, 0.95); z-
 </div>
 </div>
 </footer>
-<script src="/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
