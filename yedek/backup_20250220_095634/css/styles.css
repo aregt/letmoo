@@ -1,0 +1,27 @@
+/* styles.css */
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.font-cormorant { font-family: 'Cormorant Garamond', serif; }
+.font-nunito { font-family: 'Nunito', sans-serif; }
+
+/* Modal styles */
+.modal-content {
+  animation: modalEnter 0.3s ease-out;
+}
+
+@keyframes modalEnter {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.swiper-pagination-bullet-active { background: #1E3D59 !important; }
+.swiper-container { overflow: hidden; border-radius: 1rem; }
+.swiper-slide img { width: 100%; height: 100%; object-fit: cover; border-radius: 0.5rem; }
+
+.modal-info p { line-height: 1.6; margin-bottom: 2rem; }
+
+.store-link {
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+.store-link:hover { transform: scale(1.05); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+.store-link i { font-size: 1.2em; vertical-align: middle; }

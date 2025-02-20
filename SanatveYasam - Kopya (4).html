@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Letmoo.tr - Sanat ve Yaşamın Birleştiği Yer</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Cormorant+Garamond:wght@400;600&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#1E3D59',
+secondary: '#E8A87C'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.font-cormorant { font-family: 'Cormorant Garamond', serif; }
+.font-nunito { font-family: 'Nunito', sans-serif; }
+</style>
+</head>
+<body class="bg-white font-nunito">
+<header class="fixed w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
+<nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+<a href="#home" class="text-3xl font-['Pacifico'] text-primary">letmoo.tr</a>
+<div class="flex items-center space-x-8">
+<a href="#home" class="text-gray-700 hover:text-primary">Anasayfa</a>
+<a href="#collections" class="text-gray-700 hover:text-primary">Koleksiyonlar</a>
+<a href="#artists" class="text-gray-700 hover:text-primary">Sanatçılar</a>
+<a href="#stories" class="text-gray-700 hover:text-primary">Hikayeler</a>
+<a href="#contact" class="text-gray-700 hover:text-primary">İletişim</a>
+<div class="flex items-center space-x-4 mr-4">
+<a href="https://www.etsy.com/shop/letmootr" target="_blank" class="text-gray-700 hover:text-primary">
+<i class="ri-store-2-fill text-xl"></i>
+</a>
+<a href="https://www.amazon.com.tr/letmootr" target="_blank" class="text-gray-700 hover:text-primary">
+<i class="ri-amazon-fill text-xl"></i>
+</a>
+<a href="https://www.ebay.com/usr/letmootr" target="_blank" class="text-gray-700 hover:text-primary">
+<i class="ri-shopping-bag-fill text-xl"></i>
+</a>
+</div>
+</div>
+</nav>
+</header>
+
+<main class="pt-6">
+<section id="home" class="relative min-h-screen pt-20 flex items-center" style="background-image: url('https://public.readdy.ai/ai/img_res/7af346efe9c3c683605492f95a4506b9.jpg'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-gradient-to-r from-white/90 to-white/30"></div>
+<div class="container mx-auto px-6 relative">
+<div class="max-w-2xl">
+<h1 class="text-6xl font-cormorant font-semibold text-primary mb-6">Sanat ve Yaşamın Buluştuğu Yer</h1>
+<p class="text-xl text-gray-700 mb-8">Her duvarın bir hikaye anlattığı, sanatın günlük yaşamla buluştuğu özel bir deneyim.</p>
+<a href="#yasam-alanlarinda-sanat" class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-opacity-90">Keşfetmeye Başla</a>
+</div>
+</div>
+</section>
+<section id="yasam-alanlarinda-sanat" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<h2 class="text-4xl font-cormorant text-center text-primary mb-16">Yaşam Alanlarında Sanat</h2>
+<div class="grid grid-cols-3 gap-8">
+<div class="group relative overflow-hidden rounded-lg">
+<img src="https://public.readdy.ai/ai/img_res/4277fc923bdbb6a9e84be908609b661a.jpg" class="w-full h-[500px] object-cover transition-transform duration-300 group-hover:scale-105" alt="İstanbul'da Yaşam">
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent text-white">
+<h3 class="text-2xl font-cormorant mb-2">İstanbul'da Modern Yaşam</h3>
+<p class="text-sm opacity-90">Şehrin kalbinde, sanatla iç içe yaşam alanları</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-lg">
+<img src="https://public.readdy.ai/ai/img_res/65569488036e7091a11e9be503048ab1.jpg" class="w-full h-[500px] object-cover transition-transform duration-300 group-hover:scale-105" alt="Tasarımcı Stüdyosu">
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent text-white">
+<h3 class="text-2xl font-cormorant mb-2">Yaratıcı Stüdyolar</h3>
+<p class="text-sm opacity-90">İlhamın doğduğu özel çalışma alanları</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-lg">
+<img src="https://public.readdy.ai/ai/img_res/5dbc5772a82d3acc362cd46d9d8c9f98.jpg" class="w-full h-[500px] object-cover transition-transform duration-300 group-hover:scale-105" alt="Marakeş Esintisi">
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent text-white">
+<h3 class="text-2xl font-cormorant mb-2">Marakeş Esintisi</h3>
+<p class="text-sm opacity-90">Doğu ile batının buluştuğu sofistike mekanlar</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="collections" class="py-20">
+<div class="container mx-auto px-6">
+<h2 class="text-4xl font-cormorant text-center text-primary mb-16">Koleksiyonlar</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white rounded-lg shadow-lg overflow-hidden">
+<img src="https://public.readdy.ai/ai/img_res/ba29f88e1e23d4b2496b0917b21c25be.jpg" class="w-full h-64 object-cover" alt="Minimalist">
+<div class="p-6">
+<h3 class="text-xl font-cormorant mb-2">Minimalist Soyut</h3>
+<p class="text-gray-600 text-sm mb-4">Yalın çizgiler ve geometrik formlarla modern yaşam alanları için tasarlanmış soyut eserler.</p>
+<button class="w-full bg-primary text-white py-2 !rounded-button hover:bg-opacity-90">Koleksiyonu İncele</button>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-lg overflow-hidden">
+<img src="https://public.readdy.ai/ai/img_res/273ea874f613a156732309ea763ddf86.jpg" class="w-full h-64 object-cover" alt="Bohem">
+<div class="p-6">
+<h3 class="text-xl font-cormorant mb-2">Bohem Dokunuş</h3>
+<p class="text-gray-600 text-sm mb-4">Doğal tonlar ve organik formlarla bohem ruhunu yansıtan özgün canvas eserler.</p>
+<button class="w-full bg-primary text-white py-2 !rounded-button hover:bg-opacity-90">Koleksiyonu İncele</button>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-lg overflow-hidden">
+<img src="https://public.readdy.ai/ai/img_res/913a622a86b6f25f4e856776b02946b2.jpg" class="w-full h-64 object-cover" alt="İskandinav">
+<div class="p-6">
+<h3 class="text-xl font-cormorant mb-2">İskandinav Esinti</h3>
+<p class="text-gray-600 text-sm mb-4">Pastel tonlar ve sade çizgilerle İskandinav stilini yansıtan modern tablolar.</p>
+<button class="w-full bg-primary text-white py-2 !rounded-button hover:bg-opacity-90">Koleksiyonu İncele</button>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-lg overflow-hidden">
+<img src="https://public.readdy.ai/ai/img_res/8cb33f43f53f19e42046af32eaa2a019.jpg" class="w-full h-64 object-cover" alt="Modern Ekspresyonist">
+<div class="p-6">
+<h3 class="text-xl font-cormorant mb-2">Modern Ekspresyonist</h3>
+<p class="text-gray-600 text-sm mb-4">Canlı renkler ve dinamik fırça darbeleriyle duyguları yansıtan çağdaş eserler.</p>
+<button class="w-full bg-primary text-white py-2 !rounded-button hover:bg-opacity-90">Koleksiyonu İncele</button>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-lg overflow-hidden">
+<img src="https://public.readdy.ai/ai/img_res/5fa6ce41f08c35b1fe07a1e7648c205f.jpg" class="w-full h-64 object-cover" alt="Zen">
+<div class="p-6">
+<h3 class="text-xl font-cormorant mb-2">Zen Etkisi</h3>
+<p class="text-gray-600 text-sm mb-4">Uzak Doğu felsefesinden ilham alan minimal ve huzur verici canvas tablolar.</p>
+<button class="w-full bg-primary text-white py-2 !rounded-button hover:bg-opacity-90">Koleksiyonu İncele</button>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-lg overflow-hidden">
+<img src="https://public.readdy.ai/ai/img_res/df0b6e2f97c9a19166781e754d121882.jpg" class="w-full h-64 object-cover" alt="Akdeniz">
+<div class="p-6">
+<h3 class="text-xl font-cormorant mb-2">Akdeniz Esintisi</h3>
+<p class="text-gray-600 text-sm mb-4">Akdeniz'in canlı renkleri ve sıcak günbatımlarından ilham alan empresyonist eserler.</p>
+<button class="w-full bg-primary text-white py-2 !rounded-button hover:bg-opacity-90">Koleksiyonu İncele</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="stories" class="py-20">
+<div class="container mx-auto px-6">
+<h2 class="text-4xl font-cormorant text-center text-primary mb-16">Müşteri Hikayeleri</h2>
+<div class="grid grid-cols-2 gap-12">
+<div class="bg-white rounded-lg shadow-lg overflow-hidden">
+<div class="flex">
+<img src="https://public.readdy.ai/ai/img_res/46546b390ca48f5c128747657b2e13a1.jpg" class="w-1/2 h-80 object-cover" alt="Müşteri Hikayesi">
+<div class="w-1/2 p-8">
+<div class="flex items-center mb-4">
+<img src="https://public.readdy.ai/ai/img_res/ae5bb6eaa24d017595804b7084827910.jpg" class="w-12 h-12 rounded-full object-cover mr-4" alt="Müşteri">
+<div>
+<h3 class="font-cormorant text-xl">Deniz Aydın</h3>
+<p class="text-gray-600 text-sm">İç Mimar</p>
+</div>
+</div>
+<p class="text-gray-700 mb-4">"Letmoo.tr'den aldığım soyut tablo, evimizin atmosferini tamamen değiştirdi. Minimal tarzımızla mükemmel uyum sağladı ve misafirlerimizden sürekli övgü alıyoruz."</p>
+<div class="flex items-center text-yellow-400">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-lg overflow-hidden">
+<div class="flex">
+<img src="https://public.readdy.ai/ai/img_res/cab19e40b6b58b69a336dfa744cd2d89.jpg" class="w-1/2 h-80 object-cover" alt="Müşteri Hikayesi">
+<div class="w-1/2 p-8">
+<div class="flex items-center mb-4">
+<img src="https://public.readdy.ai/ai/img_res/9a4103045429742f4dc2189b3efc645d.jpg" class="w-12 h-12 rounded-full object-cover mr-4" alt="Müşteri">
+<div>
+<h3 class="font-cormorant text-xl">Burak Özdemir</h3>
+<p class="text-gray-600 text-sm">Şirket CEO'su</p>
+</div>
+</div>
+<p class="text-gray-700 mb-4">"Ofisimiz için seçtiğimiz sanat eserleri, çalışma ortamımıza ilham verici bir boyut kattı. Letmoo.tr'nin profesyonel yaklaşımı ve kaliteli ürünleri bizi çok memnun etti."</p>
+<div class="flex items-center text-yellow-400">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-lg overflow-hidden">
+<div class="flex">
+<img src="https://public.readdy.ai/ai/img_res/35d7df56b2af3179a06416fddf332dcf.jpg" class="w-1/2 h-80 object-cover" alt="Müşteri Hikayesi">
+<div class="w-1/2 p-8">
+<div class="flex items-center mb-4">
+<img src="https://public.readdy.ai/ai/img_res/c8d5bb8d98aba34e6d662400f1db0abc.jpg" class="w-12 h-12 rounded-full object-cover mr-4" alt="Müşteri">
+<div>
+<h3 class="font-cormorant text-xl">Elif Yıldırım</h3>
+<p class="text-gray-600 text-sm">Otel Müdürü</p>
+</div>
+</div>
+<p class="text-gray-700 mb-4">"Otelimizin her katında Letmoo.tr'nin özel koleksiyonundan eserler bulunuyor. Misafirlerimiz sanat eserleriyle bezeli koridorlarımızda yürümeyi çok seviyor."</p>
+<div class="flex items-center text-yellow-400">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-lg overflow-hidden">
+<div class="flex">
+<img src="https://public.readdy.ai/ai/img_res/20720285e869b11bcdc91a12171af0d6.jpg" class="w-1/2 h-80 object-cover" alt="Müşteri Hikayesi">
+<div class="w-1/2 p-8">
+<div class="flex items-center mb-4">
+<img src="https://public.readdy.ai/ai/img_res/eb6aa31cdf77408fe32ac138e674a097.jpg" class="w-12 h-12 rounded-full object-cover mr-4" alt="Müşteri">
+<div>
+<h3 class="font-cormorant text-xl">Murat Kaya</h3>
+<p class="text-gray-600 text-sm">Restoran Sahibi</p>
+</div>
+</div>
+<p class="text-gray-700 mb-4">"Restoranımızın ambiyansını Letmoo.tr'nin modern sanat eserleriyle tamamladık. Yemek deneyimini sanatla birleştirmek müşterilerimizi çok mutlu ediyor."</p>
+<div class="flex items-center text-yellow-400">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="artists" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<h2 class="text-4xl font-cormorant text-center text-primary mb-16">Sanatçılarımız</h2>
+<div class="grid grid-cols-3 gap-8">
+<div class="bg-white rounded-lg shadow-lg overflow-hidden">
+<img src="https://public.readdy.ai/ai/img_res/55b0063ecd868797b648f5ce44aeb6d5.jpg" class="w-full h-64 object-cover" alt="Sanatçı">
+<div class="p-6">
+<h3 class="text-xl font-cormorant mb-2">Ayşe Yılmaz</h3>
+<p class="text-gray-600 mb-4">Modern soyut sanatın öncü isimlerinden. 15 yıllık deneyimi ile minimal ve geometrik formları birleştirerek özgün eserler yaratıyor.</p>
+<div class="flex space-x-4">
+<a href="#" class="text-primary hover:text-opacity-80"><i class="ri-instagram-line ri-lg"></i></a>
+<a href="#" class="text-primary hover:text-opacity-80"><i class="ri-twitter-line ri-lg"></i></a>
+<a href="#" class="text-primary hover:text-opacity-80"><i class="ri-artboard-line ri-lg"></i></a>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-lg overflow-hidden">
+<img src="https://public.readdy.ai/ai/img_res/fff852c983a4ece5539cad095e39e986.jpg" class="w-full h-64 object-cover" alt="Sanatçı">
+<div class="p-6">
+<h3 class="text-xl font-cormorant mb-2">Mehmet Demir</h3>
+<p class="text-gray-600 mb-4">Ekspresyonist akımın temsilcisi. Duygu yoğunluğunu canlı renkler ve dinamik fırça darbeleriyle tuvale aktarıyor.</p>
+<div class="flex space-x-4">
+<a href="#" class="text-primary hover:text-opacity-80"><i class="ri-instagram-line ri-lg"></i></a>
+<a href="#" class="text-primary hover:text-opacity-80"><i class="ri-twitter-line ri-lg"></i></a>
+<a href="#" class="text-primary hover:text-opacity-80"><i class="ri-artboard-line ri-lg"></i></a>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-lg overflow-hidden">
+<img src="https://public.readdy.ai/ai/img_res/c4d68cf7b185ffbc951f1a57caaa03b5.jpg" class="w-full h-64 object-cover" alt="Sanatçı">
+<div class="p-6">
+<h3 class="text-xl font-cormorant mb-2">Zeynep Kaya</h3>
+<p class="text-gray-600 mb-4">Karma teknik ustası. Doğu ve Batı sanatını harmanlayarak çağdaş yorumlar katıyor eserlerine.</p>
+<div class="flex space-x-4">
+<a href="#" class="text-primary hover:text-opacity-80"><i class="ri-instagram-line ri-lg"></i></a>
+<a href="#" class="text-primary hover:text-opacity-80"><i class="ri-twitter-line ri-lg"></i></a>
+<a href="#" class="text-primary hover:text-opacity-80"><i class="ri-artboard-line ri-lg"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-primary text-white py-16">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-4 gap-8">
+<div>
+<h3 class="text-2xl font-['Pacifico'] mb-6">letmoo.tr</h3>
+<p class="text-white/80">Sanat ve yaşamın buluştuğu, her duvarın bir hikaye anlattığı yer.</p>
+</div>
+<div>
+<h4 class="font-cormorant text-xl mb-4">Bağlantılar</h4>
+<ul class="space-y-2">
+<li><a href="#home" class="text-white/80 hover:text-white">Anasayfa</a></li>
+<li><a href="#collections" class="text-white/80 hover:text-white">Koleksiyonlar</a></li>
+<li><a href="#artists" class="text-white/80 hover:text-white">Sanatçılar</a></li>
+<li><a href="#stories" class="text-white/80 hover:text-white">Hikayeler</a></li>
+<li><a href="#contact" class="text-white/80 hover:text-white">İletişim</a></li>
+<li class="pt-4">
+<h4 class="font-cormorant text-xl mb-2">Mağazalarımız</h4>
+<div class="flex space-x-4">
+<a href="https://www.etsy.com/shop/letmootr" target="_blank" class="text-white/80 hover:text-white flex items-center">
+<i class="ri-store-2-fill mr-1"></i> Etsy
+</a>
+<a href="https://www.amazon.com.tr/letmootr" target="_blank" class="text-white/80 hover:text-white flex items-center">
+<i class="ri-amazon-fill mr-1"></i> Amazon
+</a>
+<a href="https://www.ebay.com/usr/letmootr" target="_blank" class="text-white/80 hover:text-white flex items-center">
+<i class="ri-shopping-bag-fill mr-1"></i> eBay
+</a>
+</div>
+</li>
+</ul>
+</div>
+<div id="contact">
+<h4 class="font-cormorant text-xl mb-4">İletişim</h4>
+<ul class="space-y-2">
+<li class="flex items-center"><i class="ri-map-pin-line mr-2"></i> İstanbul, Türkiye</li>
+<li class="flex items-center"><i class="ri-mail-line mr-2"></i> info@letmoo.tr</li>
+<li class="flex items-center"><i class="ri-phone-line mr-2"></i> +90 212 555 0000</li>
+</ul>
+</div>
+<div>
+<h4 class="font-cormorant text-xl mb-4">Bültene Katılın</h4>
+<p class="text-white/80 mb-4">Yeni sanat eserleri ve etkinliklerden haberdar olun.</p>
+<form class="flex">
+<input type="email" placeholder="E-posta adresiniz" class="flex-1 px-4 py-2 !rounded-button rounded-r-none focus:outline-none text-gray-900">
+<button class="bg-secondary text-white px-6 py-2 !rounded-button rounded-l-none hover:bg-opacity-90">Katıl</button>
+</form>
+</div>
+</div>
+<div class="mt-12 pt-8 border-t border-white/20 text-center text-white/60">
+<p>&copy; 2025 Letmoo.tr. Tüm hakları saklıdır.</p>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+// Like button functionality
+const likeButtons = document.querySelectorAll('.ri-heart-line');
+likeButtons.forEach(button => {
+button.addEventListener('click', function() {
+this.classList.toggle('ri-heart-line');
+this.classList.toggle('ri-heart-fill');
+});
+});
+// Smooth scroll functionality
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+e.preventDefault();
+const targetId = this.getAttribute('href');
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+const headerOffset = 80; // Height of fixed header
+const elementPosition = targetElement.getBoundingClientRect().top;
+const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+window.scrollTo({
+top: offsetPosition,
+behavior: 'smooth'
+});
+}
+});
+});
+});
+</script>
+</body>
+</html>
