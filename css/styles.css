@@ -17,6 +17,79 @@
     padding: 0 1.5rem;
 }
 
+/* Grid Layout */
+.grid {
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1280px;
+    place-items: center;
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .hero-text {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    
+    h1 {
+        font-size: 3rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        gap: 1.5rem;
+    }
+    
+    nav {
+        flex-wrap: wrap;
+    }
+    
+    nav > div {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    nav a {
+        display: block;
+        text-align: center;
+        padding: 0.75rem 0;
+    }
+    
+    h1 {
+        font-size: 2.5rem !important;
+    }
+    
+    h2 {
+        font-size: 2rem !important;
+    }
+    
+    .grid {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem !important;
+    }
+    
+    .store-link {
+        padding: 0.5rem;
+    }
+}
+
 /* Navigation */
 nav {
     background: white;
@@ -76,60 +149,4 @@ nav a {
     height: 100%;
     object-fit: cover;
     border-radius: 0.5rem;
-}
-
-/* Responsive styles */
-@media (max-width: 1024px) {
-    .hero-text {
-        max-width: 100%;
-        padding: 0 1rem;
-    }
-    
-    h1 {
-        font-size: 3rem !important;
-    }
-}
-
-@media (max-width: 768px) {
-    nav {
-        flex-wrap: wrap;
-    }
-    
-    nav > div {
-        width: 100%;
-        margin-top: 1rem;
-    }
-    
-    nav a {
-        display: block;
-        text-align: center;
-        padding: 0.75rem 0;
-    }
-    
-    h1 {
-        font-size: 2.5rem !important;
-    }
-    
-    h2 {
-        font-size: 2rem !important;
-    }
-    
-    .grid {
-        gap: 1rem;
-    }
-}
-
-@media (max-width: 640px) {
-    .container {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    
-    h1 {
-        font-size: 2rem !important;
-    }
-    
-    .store-link {
-        padding: 0.5rem;
-    }
 }
