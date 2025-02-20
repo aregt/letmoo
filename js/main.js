@@ -1,15 +1,29 @@
-// Automatic language redirect based on country
-fetch('https://ipapi.co/json/')
-  .then(response => response.json())
-  .then(data => {
-    if (data.country !== 'TR') {
-      window.location.href = 'index-en.html';
-    }
-  })
-  .catch(() => window.location.href = 'index-en.html');
-
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
+    // Mobile menu toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('hidden');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                navMenu.classList.add('hidden');
+            }
+        });
+
+        // Close menu when clicking on a link
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.add('hidden');
+            });
+        });
+    }
+
     // Initialize Swiper slider if it exists
     const swiperElement = document.querySelector('.swiper');
     if (swiperElement) {
